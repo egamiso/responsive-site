@@ -1,0 +1,85 @@
+// Font 
+$basefontfamily: "メイリオ",Verdana,"游ゴシック",YuGothic,"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #FFF6E5;
+$subColor: #F3E2C2;
+$keyColor: #6480A6;
+$fontColor: #856A63;
+
+// body
+html{
+    background-color:$baseColor;
+    color:$fontColor;
+    
+
+     p{
+       font-size:90%;
+       line-height:1.6;
+       letter-spacing:0.1em;
+         
+      }
+     h2{
+       font-size:120%;
+       display:inline-block;
+       text-align:center;
+     }
+}
+
+// header
+.topphoto{
+    background-image:url("./images/image_top.jpg");
+    height:250px;
+    width:100%;
+    background-size:cover;
+    background-position:center center;
+    background-color:$subColor;
+}
+   
+// main
+.container{
+    width:100%;
+    margin:20px;
+    text-align:center;
+    
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+         .textbox{
+             background-color:$baseColor;
+             flex-grow:1;
+         }
+}
+
+
+// footer
+footer{
+    background-color:$subColor;
+    text-align:center;
+    width:100%;
+}
+.footer_button{
+    width:200px;
+    color:$baseColor;
+    background-color:$keyColor;
+    text-align:center;
+    text-decoration:none;
+    border-radius:5px;
+    
+    margin:0 auto;
+}
+
+
+// for PCsite
+@media(min-width:769px){
+    
+//topphoto
+.topphoto{
+    height:500px;
+}
+
+//main
+.container{
+    flex-direction:row;
+}
+}
