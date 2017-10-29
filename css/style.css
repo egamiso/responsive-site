@@ -5,43 +5,59 @@ html {
     font-size: 90%;
     line-height: 1.6;
     letter-spacing: 0.1em; }
+  html h1 {
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center; }
   html h2 {
     font-size: 120%;
-    display: inline-block;
+    font-weight: bold;
     text-align: center; }
 
 .topphoto {
-  background-image: url("./images/image_top.jpg");
+  background-image: url("../images/image_top.jpg");
   height: 250px;
   width: 100%;
   background-size: cover;
   background-position: center center;
   background-color: #F3E2C2; }
 
+.maintitle {
+  margin: 50px 0; }
+
 .container {
   width: 100%;
-  margin: 20px;
+  margin: 30px 0;
   text-align: center;
   display: flex;
   justify-content: space-around;
   flex-direction: column; }
   .container .textbox {
-    background-color: #FFF6E5;
-    flex-grow: 1; }
+    background-color: #F3E2C2;
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px 30px;
+    text-align: left; }
+    .container .textbox .title {
+      padding: 20px 0px 30px; }
 
 footer {
   background-color: #F3E2C2;
   text-align: center;
-  width: 100%; }
-
-.footer_button {
-  width: 200px;
-  color: #FFF6E5;
-  background-color: #6480A6;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  margin: 0 auto; }
+  width: 100%;
+  padding: 30px 0; }
+  footer .footer-box {
+    padding: 20px 0; }
+  footer .footer_button {
+    width: 200px;
+    height: 30px;
+    color: #FFF6E5;
+    background-color: #6480A6;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    line-height: 2; }
 
 @media (min-width: 769px) {
   .topphoto {

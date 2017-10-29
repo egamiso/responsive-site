@@ -13,22 +13,26 @@ html{
     color:$fontColor;
     
 
-     p{
-       font-size:90%;
-       line-height:1.6;
-       letter-spacing:0.1em;
-         
-      }
-     h2{
-       font-size:120%;
-       display:inline-block;
-       text-align:center;
-     }
+    p{
+      font-size:90%;
+      line-height:1.6;
+      letter-spacing:0.1em;
+    }
+    h1{
+      font-size:130%;
+      font-weight:bold;
+      text-align:center;
+    }
+    h2{
+      font-size:120%;
+      font-weight:bold;
+      text-align:center;
+    }
 }
 
 // header
 .topphoto{
-    background-image:url("./images/image_top.jpg");
+    background-image:url("../images/image_top.jpg"); 
     height:250px;
     width:100%;
     background-size:cover;
@@ -37,36 +41,55 @@ html{
 }
    
 // main
+.maintitle{
+    margin:50px 0;
+}
+
 .container{
     width:100%;
-    margin:20px;
+    margin:30px 0;
     text-align:center;
     
     display:flex;
     justify-content:space-around;
     flex-direction:column;
-         .textbox{
-             background-color:$baseColor;
-             flex-grow:1;
-         }
+        .textbox{
+            background-color:$subColor;
+            flex:1;
+            
+            margin:0 20px;
+            padding:20px 30px;
+            text-align:left;
+                .title{
+                    padding:20px 0px 30px;
+                }
+        }
 }
 
 
 // footer
 footer{
+    
     background-color:$subColor;
     text-align:center;
     width:100%;
-}
-.footer_button{
-    width:200px;
-    color:$baseColor;
-    background-color:$keyColor;
-    text-align:center;
-    text-decoration:none;
-    border-radius:5px;
+    padding:30px 0;
+
+    .footer-box{
+        padding:20px 0;
+    }
+    .footer_button{
+        width:200px;
+        height:30px;
+        color:$baseColor;
+        background-color:$keyColor;
+        text-align:center;
+        text-decoration:none;
+        border-radius:5px;
     
-    margin:0 auto;
+        margin:20px auto; //ボタン中央揃え
+        line-height:2;
+    }
 }
 
 
@@ -74,12 +97,12 @@ footer{
 @media(min-width:769px){
     
 //topphoto
-.topphoto{
-    height:500px;
-}
+    .topphoto{
+        height:500px;
+    }
 
 //main
-.container{
-    flex-direction:row;
-}
+    .container{
+        flex-direction:row;
+    }
 }
